@@ -1,108 +1,36 @@
+// 1. create an array called ages containing values: 3, 9, 23, 64, 2, 8, 28, 93.
 
-        // Array of ages
-        let ages = [3, 9, 23, 64, 2, 8, 28, 93];
-        
-        // Calculate the difference between the last and first element
-        let lastIndex = ages.length - 1;
-        let ageDifference = ages[lastIndex] - ages[0];
-        console.log("Age difference:", ageDifference);
-        
-        // Add a new age to the array
-        ages.push(42);
-        lastIndex = ages.length - 1;
-        ageDifference = ages[lastIndex] - ages[0];
-        console.log("New age difference:", ageDifference);
-        
-        // Calculate the average age
-        let sum = 0;
-        for (let i = 0; i < ages.length; i++) {
-            sum += ages[i];
-        }
-        let averageAge = sum / ages.length;
-        console.log("Average age:", averageAge);
-        
-        // Array of names
-        let names = ['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob'];
-        
-        // Calculate average number of letters per name
-        let totalLetters = 0;
-        for (let i = 0; i < names.length; i++) {
-            totalLetters += names[i].length;
-        }
-        let averageLetters = totalLetters / names.length;
-        console.log("Average letters per name:", averageLetters);
-        
-        // Concatenate all names together
-        let allNames = '';
-        for (let i = 0; i < names.length; i++) {
-            allNames += names[i] + ' ';
-        }
-        console.log("All names:", allNames);
-        
-        // Accessing the last element of an array
-        let lastElement = names[names.length - 1];
-        console.log("Last element:", lastElement);
-        
-        // Accessing the first element of an array
-        let firstElement = names[0];
-        console.log("First element:", firstElement);
-        
-        // Create an array of name lengths
-        let nameLengths = [];
-        for (let i = 0; i < names.length; i++) {
-            nameLengths.push(names[i].length);
-        }
-        console.log("Name lengths:", nameLengths);
-        
-        // Calculate the sum of elements in nameLengths
-        let sumNameLengths = 0;
-        for (let i = 0; i < nameLengths.length; i++) {
-            sumNameLengths += nameLengths[i];
-        }
-        console.log("Sum of name lengths:", sumNameLengths);
-        
-        // Function to concatenate a word n times
-        function concatenateWord(word, n) {
-            return word.repeat(n);
-        }
-        console.log(concatenateWord('Hello', 3));
-        
-        // Function to create a full name
-        function getFullName(firstName, lastName) {
-            return firstName + ' ' + lastName;
-        }
-        console.log(getFullName('John', 'Doe'));
-        
-        // Function to check if sum of array is greater than 100
-        function isSumGreaterThan100(arr) {
-            let sum = 0;
-            for (let i = 0; i < arr.length; i++) {
-                sum += arr[i];
-            }
-            return sum > 100;
-        }
-        console.log(isSumGreaterThan100([50, 30, 25]));
-        
-        // Function to calculate average of array
-        function calculateAverage(arr) {
-            let sum = 0;
-            for (let i = 0; i < arr.length; i++) {
-                sum += arr[i];
-            }
-            return sum / arr.length;
-        }
-        console.log(calculateAverage([10, 20, 30]));
-        
-        // Function to compare averages of two arrays
-        function compareArrayAverages(arr1, arr2) {
-            let avg1 = calculateAverage(arr1);
-            let avg2 = calculateAverage(arr2);
-            return avg1 > avg2;
-        }
-        console.log(compareArrayAverages([5, 10, 15], [20, 25, 30]));
-        
-        // Function to decide if to buy a drink
-        function willBuyDrink(isHotOutside, moneyInPocket) {
-            return isHotOutside && moneyInPocket > 10.50;
-        }
-        console.log(willBuyDrink(true, 15));
+let ages = [2, 8, 13, 17, 23, 28, 33, 45];
+
+// 1a. Programmatically subtract the value of the first element in the array from the value in the last element of the array.
+// 1b. Add a new age to your array and repeat the step above to ensure it is dynamic.
+// 1c. Use a loop to iterate through the array and calculate the average age. 
+
+console.log(sum / ages.length);
+
+// 2. Create an array called names that contains the following values: 'Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob'.
+// 2a. Use a loop to iterate through the array and calculate the average number of letters per name.
+// 2b. Use a loop to iterate through the array again and concatenate all the names together, sparated by spaces. 
+
+// 3. How do you access the last element of any array?
+
+// 4. How do you access the first element of any array?
+
+// 5. Create a new array called nameLengths. Write a loop to iterate over the previously created names array and add the length of each name to the nameLengths array.
+
+// 6. Write a loop to iterate over the nameLengths array and calculate the sum of all the elements in the array.
+
+// 7. Write a function that takes two parameters, word and n, as arguments and returns the word concatenated to itself n number of times.
+
+// 8. Write a function that takes two parameters, firstName and lastName, and returns a full name. The full name should be the first and the last name separated by a space.
+
+// 9. Write a function that takes an array of numbers and returns true if the sum of all the numbers in the array is greater than 100.
+
+// 10. Write a function that takes an array of numbers and returns the average of all the elements in the array.
+
+// 11. Write a function that takes two arrays of numbers and returns true if the average of the elements in the first array is greater than the average of the elements in the second array.
+
+// 12. Write a function called willBuyDrink that takes a boolean isHotOutside, and a numer moneyInPocket, and return true if hot outside and moneyInPocket is greater than 10.50. 
+
+// 13. Create a function of your own that solves a problem. In comments, write what the function does and why you created it.
+            
